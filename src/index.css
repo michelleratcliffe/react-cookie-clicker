@@ -17,6 +17,13 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
 
 .logo {
   width: 30rem;
@@ -35,28 +42,10 @@
   padding: 2em;
 }
 
-footer {
-  color: #3a0882;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
-
 .CookieBox {
   display: flex;
   flex-direction: column;
   background-color:#ffffff 0.3;
-
 }
 
 .CookieInfo {
@@ -120,6 +109,9 @@ btn-buy:focus-visible {
   color: none;
 } 
 
+footer {
+  color: #3a0882;
+}
 
 
 @media (prefers-color-scheme: light) {
