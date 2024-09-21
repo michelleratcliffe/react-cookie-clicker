@@ -31,7 +31,7 @@ function App() {
   },[cookies])
 
 
-  const farts = ["./fart-one.mp3", "./fart-two.mp3"];
+  const farts = ["./fart-one.mp3", "./fart-two.mp3", "./fart-three.mp3"];
   function randomFarts() {
     var file = farts[Math.floor(Math.random()*farts.length)];
     let audio = new Audio(file);
