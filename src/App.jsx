@@ -30,6 +30,14 @@ function App() {
     localStorage.setItem("click", JSON.stringify(click));
   },[cookies])
 
+
+  const farts = ["./fart-one.mp3", "./fart-two.mp3"];
+  function randomFarts() {
+    var file = farts[Math.floor(Math.random()*farts.length)];
+    let audio = new Audio(file);
+    audio.play();
+  }
+
   return (
     <div>
       <div className="CookieBox">
@@ -49,6 +57,7 @@ function App() {
             onClick={() => {
               setClick((click) => click + 1);
               setCookies((cookies) => cookies + 1);
+              randomFarts();
             }}
           >
             

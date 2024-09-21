@@ -47,13 +47,13 @@ const [affordable, setAffordable] = useState(false);
 
             <div className="ShopBoxes">
             <h4>{upgradesNames[index]}</h4>
-            <p>{shop.cost}</p>
-            <p>{shop.increase}</p>
+            <p><b>Cost: </b>{shop.cost}</p>
+            <p><b>Increase: </b>{shop.increase}</p>
             <button 
               disabled={cookies >= shop.cost ? false : true}
               onClick={() => handleClick(shop.cost, shop.increase)}
             className="btn-buy">
-              Buy Me
+              Upgrade
             </button>
             </div>
                         
