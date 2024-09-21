@@ -34,7 +34,7 @@ function App() {
   return (
     <div>
       <div className="CookieBox">
-      <img src="./public/uni-logo2.png" alt="unicorn fart extractor logo" className="logo"/>
+      <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo"/>
         <div className="CookieInfo">
         <span>Clicks: {click}</span>
           <Cookie
@@ -52,7 +52,7 @@ function App() {
             }}
           >
             
-            <img src="./public/weird-unicorn.png" alt="" /></button>
+            <img src="./weird-unicorn.png" alt="" /></button>
           <br />
           <br />
           
