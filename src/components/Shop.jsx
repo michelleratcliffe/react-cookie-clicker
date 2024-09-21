@@ -46,7 +46,7 @@ const [affordable, setAffordable] = useState(false);
             {/* Display a specific item from upgradesNames based on the index */}
 
             <div className="ShopBoxes">
-            <p>{upgradesNames[index]}</p>
+            <h4>{upgradesNames[index]}</h4>
             <p>{shop.cost}</p>
             <p>{shop.increase}</p>
             <button 
