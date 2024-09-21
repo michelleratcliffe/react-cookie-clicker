@@ -39,6 +39,7 @@ body {
 }
 audio {
   align-self: center;
+  margin-bottom: 20px;
 }
 .padding {
   padding: 2em;
@@ -81,7 +82,6 @@ audio {
   background-color: paleturquoise;
   opacity: 0.7;
   border-radius: 8px;
-  
 }
 
 button {
@@ -109,7 +109,37 @@ btn-buy:focus-visible {
 }
 .unicorn-button:hover {
   color: none;
+
 } 
+/* Define the bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Default position */
+  }
+  40% {
+      transform: translateY(-30px); /* Bounce up */
+  }
+  60% {
+      transform: translateY(-15px); /* Smaller bounce */
+  }
+}
+
+/* Style the image */
+.unicorn-button {
+  width: 400px; /* Adjust as needed */
+  transition: all 0.3s ease-in-out;
+}
+
+.unicorn-button:hover {
+  animation: bounce 1s ease infinite;
+}
+
+
+
+
+
+
+
 
 footer {
   color: #3a0882;

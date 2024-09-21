@@ -3,7 +3,6 @@ import "./reset.css"
 import "./media.css"
 import Footer from "./components/Footer";
 import Shop from "./components/Shop";
-import { shopUpgrades } from "./stores/Upgrades";
 import Cookie from "./components/cookies";
 
 
@@ -42,6 +41,7 @@ function App() {
     <div>
       <div className="CookieBox">
       <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo"/>
+      {/* <h1>UNICORN Fart Extractor</h1> */}
         <div className="CookieInfo">
           <audio src="./Look-at-my-horse.mp3" controls/>
         <span>Clicks: {click}</span>
@@ -53,7 +53,8 @@ function App() {
             
           />
           {/* <a className="uni"></a> */}
-          <button className="unicorn-button"
+          <button className="unicorn-button bounce-image"  
+          alt="Bouncing Image"
             onClick={() => {
               setClick((click) => click + 1);
               setCookies((cookies) => cookies + 1);
