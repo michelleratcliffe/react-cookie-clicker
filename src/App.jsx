@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import "./reset.css"
 import "./media.css"
 import Footer from "./components/Footer";
@@ -36,6 +35,7 @@ function App() {
       <div className="CookieBox">
       <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo"/>
         <div className="CookieInfo">
+          <audio src="./Look-at-my-horse.mp3" controls/>
         <span>Clicks: {click}</span>
           <Cookie
             cookies={cookies}
