@@ -69,7 +69,7 @@ function App() {
         </div>
       </div>
       
-      <h2>Extract more</h2>
+      <h2>Upgrades:</h2>
       <div className="ShopContainer">
         
        <Shop

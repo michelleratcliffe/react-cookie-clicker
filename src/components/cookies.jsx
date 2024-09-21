@@ -16,8 +16,8 @@ export default function CookieCounter(
 
   return (
     <div>
-      <p>Cookies: {cookies} </p>
-      <p>Cookies Per Second: {cookiesPerSecond}</p>
+      <p>Farts: {cookies} </p>
+      <p>Farts Per Second: {cookiesPerSecond}</p>
     </div>
   );
 }
