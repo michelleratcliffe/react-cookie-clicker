@@ -1,3 +1,3 @@
 export default function Footer() {
-  return <footer>CopyRight &#169; Unicorn Farts Incorporated</footer>;
+  return <footer>CopyRight &#169; Unicorn Farts Collectors Anonymous</footer>;
 }

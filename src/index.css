@@ -134,7 +134,27 @@ btn-buy:focus-visible {
   animation: bounce 1s ease infinite;
 }
 
+/* PARTICLE EFFECT WHOOP WHOOP - Just when you thought it couldnt get any worse... TahDah!!! */
 
+/* Styles for the particle */
+.particle {
+  position: absolute;
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  background: url('./cookie3.png'); /* Your particle image */
+  background-size: cover;
+  animation: fadeOut 1s ease-out forwards;
+  pointer-events: none; /* Ensure particles don't block clicks */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 
 
@@ -143,6 +163,7 @@ btn-buy:focus-visible {
 
 footer {
   color: #3a0882;
+  margin-top: 20px;
 }
 
 
