@@ -4,10 +4,6 @@
   font-weight: 400;
   color: black;
   background-image: url(/fantasy-background.png);
-  background-image: no-repeat;
-  background-image: center;
-  background-image: fixed;
-  background-color: white;
   background-size: cover;
 }
 
@@ -23,7 +19,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
- 
 }
 
 .settings{
@@ -45,7 +40,6 @@ body {
   text-decoration: none;
 }
 
-
 /* Logo RAINBOWS */
 .u {
   color: #e7484f;
@@ -65,8 +59,6 @@ body {
 .r {
   color: #732982;
 }
-
-
 
 /* audio */
 audio {
@@ -100,7 +92,6 @@ audio {
   justify-content: center;
   column-gap: 10px;
   row-gap: 15px;
-  border: pink 1px solid;
 }
 
 .ShopBoxes {
@@ -128,14 +119,7 @@ button {
   background-color: plum;
   transition: border-color 0.25s;
 }
-btn-buy:hover {
-  border-color: #630bd5;
-}
-btn-buy:focus,
-btn-buy:focus-visible {
-  outline: 10px auto -webkit-focus-ring-color;
-}
-/* Rainbow btn begins */
+
 .rainbow {
   cursor: pointer;
   padding: 8px 16px;
@@ -221,23 +205,7 @@ btn-buy:focus-visible {
   }
 }
 
-
-
 footer {
-  color: #3a0882;
+  color: #000000;
   margin-top: 20px;
 }
-
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

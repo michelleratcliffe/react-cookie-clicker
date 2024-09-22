@@ -1,25 +1,4 @@
-/* @media screen/print/speech */
-/* Small devices */
-/* @media (orientation: landscape/portrait) */
-/* @media (orientation: lanscape) and (max-width: 500px) */
-@media all and (max-width: 500) {
-}
-
-/* medium devices */
-@media all and (min-width: 768px) {
-}
-/* large devices */
-@media all and (min-width: 992px) {
-}
-
-/* x-large devices */
-@media all and (min-width: 1200px) {
-}
-
-/* XX-large devices  */
-@media all and (min-width: 1400px) {
-}
-
+/* I made the site 100% responsive and had these ready for any tweaks but I have not found anything to tweak yet */
 
 /* IMO these are the best breakpoints: */
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }

@@ -52,12 +52,11 @@ const [affordable, setAffordable] = useState(false);
             <button 
               disabled={cookies >= shop.cost ? false : true}
               onClick={() => handleClick(shop.cost, shop.increase)}
-            className="btn-buy rainbow rainbow-effect">
+            className="rainbow rainbow-effect">
               Upgrade
             </button>
             </div>
                         
-            
           </div>
         );
       })}
