@@ -59,7 +59,7 @@ function App() {
       return {
         id: Date.now() + Math.random(), // Unique ID for each particle
         x: boxX - 50, // Start position based on click event
-        y: boxY + 250,
+        y: boxY + 300,
         directionX,
         directionY,
         speed,
