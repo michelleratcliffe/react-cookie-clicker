@@ -40,50 +40,73 @@ function App() {
     audio.play();
   }
 
+  //   function resetAll() {
+  //   cookies = 0;
+  //   cookiesPerSecond = 0;
+  //   localStorage.clear();
+  // }
+
+
   // Function to handle particle generation and cookie clicks
-  const handleClick = (e) => {
-    const numberOfParticles = 10; // Number of particles to generate
-    
-    const newParticles = Array.from({ length: numberOfParticles }).map(() => {
-      // Randomize direction and speed for each particle
-      const directionX = Math.random() * 2 - 1; // Random value between -1 and 1
-      const directionY = Math.random() * 2 - 1;
-      const speed = Math.random() * 3 + 1; // Random speed between 1 and 4
-  
+const handleClick = (e) => {
+  const numberOfParticles = 10; // Number of particles to generate
+  const particleImages = [
+    "/cookie1.png", 
+    "/cookie2.png", 
+    "/cookie3.png",
+    "/doom-cloud.png", 
+    "/magic.png", 
+    "/rainbow.png",
+    "/rainbow2.png", 
+    "/sprinkles.png", 
+    "/sprinkles2.png"
+      // Add more image paths as needed
+  ];
 
-    const box = bouncy.current.getBoundingClientRect()
-    const boxX = box.left + ((box.right - box.left) * 0.5)
-    const boxY = box.top + ((box.bottom - box.top) * 0.5)
+  const newParticles = Array.from({ length: numberOfParticles }).map(() => {
+    // Randomize direction and speed for each particle
+    const directionX = Math.random() * 2 - 1; // Random value between -1 and 1
+    const directionY = Math.random() * 2 - 1;
+    const speed = Math.random() * 3 + 1; // Random speed between 1 and 4
+
+    const box = bouncy.current.getBoundingClientRect();
+    const boxX = box.left + (box.right - box.left) * 0.5;
+    const boxY = box.top + (box.bottom - box.top) * 0.5;
+
+    // Select a random image from the array
+    const randomImage = particleImages[Math.floor(Math.random() * particleImages.length)];
+
+    return {
+      id: Date.now() + Math.random(), // Unique ID for each particle
+      x: boxX - 50, // Start position based on click event
+      y: boxY + 300,
+      directionX,
+      directionY,
+      speed,
+      image: randomImage, // Store the selected image in the particle object
+    };
+  });
+
+  setParticles((prevParticles) => [...prevParticles, ...newParticles]);
+
+  // Remove each particle after 1 second
+  setTimeout(() => {
+    setParticles((prevParticles) =>
+      prevParticles.filter((p) => !newParticles.includes(p))
+    );
+  }, 1000);
+
+  setClick((click) => click + 1);
+  setCookies((cookies) => cookies + 1);
+  randomFarts();
+};
 
 
-      return {
-        id: Date.now() + Math.random(), // Unique ID for each particle
-        x: boxX - 50, // Start position based on click event
-        y: boxY + 200,
-        directionX,
-        directionY,
-        speed,
-      };
-    });
-  
-    setParticles((prevParticles) => [...prevParticles, ...newParticles]);
-  
-    // Remove each particle after 1 second
-    setTimeout(() => {
-      setParticles((prevParticles) =>
-        prevParticles.filter((p) => !newParticles.includes(p))
-      );
-    }, 1000);
-  
-    setClick((click) => click + 1);
-    setCookies((cookies) => cookies + 1);
-    randomFarts();
-  };
-  
   
 
   return (
     <div>
+      {/* <button class="settings" onClick={resetAll}>Reset</button> */}
       <div className="CookieBox">
         <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo" />
         <div className="CookieInfo">
@@ -121,14 +144,16 @@ function App() {
 
       {/* Render particles */}
       {particles.map((particle) => (
-         <div
-         key={particle.id}
-         className="particle"
-         style={{
-           left: `${particle.x + particle.directionX * particle.speed * 20}px`,
-           top: `${particle.y + particle.directionY * particle.speed * 20}px`,
-         }}
-       ></div>
+        <div
+          key={particle.id}
+          className="particle"
+          style={{
+            left: `${particle.x + particle.directionX * particle.speed * 20}px`,
+            top: `${particle.y + particle.directionY * particle.speed * 20}px`,
+            backgroundImage: `url(${particle.image})`, // Use the random image
+            backgroundSize: "cover",
+          }}
+        ></div>
       ))}
     </div>
   );

@@ -25,6 +25,11 @@ body {
   min-height: 100vh;
 }
 
+.settings{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
 .logo {
   width: 30rem;
   align-self: center;
@@ -139,12 +144,11 @@ btn-buy:focus-visible {
 /* Styles for the particle */
 .particle {
   position: absolute;
-  width: 20px; /* Adjust size as needed */
-  height: 20px;
-  background: url('/cookie3.png'); /* Your particle image */
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
   background-size: cover;
-  animation: fadeOut 1s ease-out forwards;
   pointer-events: none; /* Ensure particles don't block clicks */
+  animation: fadeOut 1s ease-out forwards;
 }
 
 @keyframes fadeOut {
@@ -158,16 +162,13 @@ btn-buy:focus-visible {
 
 
 
-
-
-
 footer {
   color: #3a0882;
   margin-top: 20px;
 }
 
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -178,4 +179,4 @@ footer {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
