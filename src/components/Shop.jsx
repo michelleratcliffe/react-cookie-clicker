@@ -44,7 +44,6 @@ const [affordable, setAffordable] = useState(false);
         return (
           <div className="ShopInfo" key={index}>
             {/* Display a specific item from upgradesNames based on the index */}
-
             <div className="ShopBoxes">
             <h4>{upgradesNames[index]}</h4>
             <p><b>Cost: </b>{shop.cost}</p>
@@ -55,8 +54,7 @@ const [affordable, setAffordable] = useState(false);
             className="rainbow rainbow-effect">
               Upgrade
             </button>
-            </div>
-                        
+            </div>        
           </div>
         );
       })}

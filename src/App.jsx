@@ -25,7 +25,6 @@ function App() {
   const [particles, setParticles] = useState([]); // State to manage particles
   const bouncy = useRef()
 
-
   useEffect(() => {
     localStorage.setItem("cookies", JSON.stringify(cookies));
     localStorage.setItem("cookiesPerSecond", JSON.stringify(cookiesPerSecond));
@@ -41,7 +40,6 @@ function App() {
     let audio = new Audio(file);
     audio.play();
   }
-
 
 // Function to handle particle generation and cookie clicks
 const handleClick = (e) => {
@@ -73,7 +71,7 @@ const handleClick = (e) => {
     return {
       id: Date.now() + Math.random(), // Unique ID for each particle
       x: boxX - 50, // Start position based on click event
-      y: boxY + 200,
+      y: boxY + 200, //This is driving me nuts as it changes between localhost and render
       directionX,
       directionY,
       speed,
@@ -94,8 +92,6 @@ const handleClick = (e) => {
   setCookies((cookies) => cookies + 1);
   randomFarts();
 };
-
-
 
   return (
     <div>
@@ -127,15 +123,13 @@ const handleClick = (e) => {
           <button
             className="unicorn-button"
             alt="Bouncing Unicorn"
-            onClick={handleClick}
-          >
+            onClick={handleClick}>
             <img src="./weird-unicorn.png" alt="weird embarrased unicorn" ref={bouncy}/>
           </button>
           <br />
           <br />
         </div>
       </div>
-
       <h2>Upgrades:</h2>
       <div className="ShopContainer">
         <Shop
@@ -145,7 +139,6 @@ const handleClick = (e) => {
           setCookiesPerSecond={setCookiesPerSecond}
         />
       </div>
-
       <Footer />
 
       {/* Render particles */}
