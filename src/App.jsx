@@ -47,21 +47,22 @@ function App() {
   // }
 
 
-  // Function to handle particle generation and cookie clicks
+// Function to handle particle generation and cookie clicks
 const handleClick = (e) => {
   const numberOfParticles = 10; // Number of particles to generate
   const particleImages = [
-    "/cookie1.png", 
-    "/cookie2.png", 
+    "/cookie1.png",  
     "/cookie3.png",
     "/doom-cloud.png", 
     "/magic.png", 
     "/rainbow.png",
     "/rainbow2.png", 
     "/sprinkles.png", 
-    "/sprinkles2.png"
-      // Add more image paths as needed
+    "/sprinkles2.png" // Add more image paths as needed
   ];
+
+  // Select a single random image for this click event
+  const selectedImage = particleImages[Math.floor(Math.random() * particleImages.length)];
 
   const newParticles = Array.from({ length: numberOfParticles }).map(() => {
     // Randomize direction and speed for each particle
@@ -73,17 +74,14 @@ const handleClick = (e) => {
     const boxX = box.left + (box.right - box.left) * 0.5;
     const boxY = box.top + (box.bottom - box.top) * 0.5;
 
-    // Select a random image from the array
-    const randomImage = particleImages[Math.floor(Math.random() * particleImages.length)];
-
     return {
       id: Date.now() + Math.random(), // Unique ID for each particle
       x: boxX - 50, // Start position based on click event
-      y: boxY + 300,
+      y: boxY + 200,
       directionX,
       directionY,
       speed,
-      image: randomImage, // Store the selected image in the particle object
+      image: selectedImage, // Use the same image for all particles in this click
     };
   });
 
@@ -100,6 +98,9 @@ const handleClick = (e) => {
   setCookies((cookies) => cookies + 1);
   randomFarts();
 };
+
+
+   
 
 
   
@@ -143,14 +144,14 @@ const handleClick = (e) => {
       <Footer />
 
       {/* Render particles */}
-      {particles.map((particle) => (
+       {particles.map((particle) => (
         <div
           key={particle.id}
           className="particle"
           style={{
             left: `${particle.x + particle.directionX * particle.speed * 20}px`,
             top: `${particle.y + particle.directionY * particle.speed * 20}px`,
-            backgroundImage: `url(${particle.image})`, // Use the random image
+            backgroundImage: `url(${particle.image})`, // Use the selected image
             backgroundSize: "cover",
           }}
         ></div>
