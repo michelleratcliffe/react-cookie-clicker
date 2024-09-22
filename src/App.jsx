@@ -117,8 +117,8 @@ function App() {
          key={particle.id}
          className="particle"
          style={{
-           left: `${particle.x + particle.directionX * particle.speed * 100}px`,
-           top: `${particle.y + particle.directionY * particle.speed * 100}px`,
+           left: `${particle.x + particle.directionX * particle.speed * 10}px`,
+           top: `${particle.y + particle.directionY * particle.speed * 10}px`,
          }}
        ></div>
       ))}
