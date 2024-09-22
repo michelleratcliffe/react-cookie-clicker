@@ -1,9 +1,22 @@
-/* I made the site 100% responsive and had these ready for any tweaks but I have not found anything to tweak yet */
+/* I tried to make my site fully scaleable
+Sometimes it works perfectly and others not... */
 
-/* IMO these are the best breakpoints: */
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Styles for small mobile devices */
+  }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles for larger mobile devices */
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Styles for small laptops */
+  }
+  @media only screen and (min-width: 1281px) {
+    /* Styles for desktops */
+  }
+   

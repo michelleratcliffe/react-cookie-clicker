@@ -1,4 +1,9 @@
-# Cookie Mania
+# NSFW UNICORN FART EXTRACTOR
+https://react-cookie-clicker-s1y2.onrender.com/?1234556710
+https://github.com/michelleratcliffe/react-cookie-clicker
+
+<p>*enjoy the easter egg, not even bleach can burn that from your mind. 
+You are welcome.</p>
 
 <h1>User Stories</h1>
 <p>🐿️ As a developer, I want the application to use the <strong>useState hook</strong> so that the user’s interactions with the app are smooth and their data is managed effectively.</p>
@@ -42,12 +47,25 @@
 <p>What went really well and what could have gone better?</p>   
 <p>What useful external sources helped you complete the assignment (e.g YouTube tutorials)?</p>
 
-NOTES
+<h3>SHOUT OUT</h3>
+<p>I would like to thank all my teachers, Sam and Frankie for their patience in helping me solve my typos and terrible syntax mistakes... </p>
+<p>Frankie thanks so much for coding along with me and not getting frustrated when I could figure out what I had done wrong, like writing half functions and forgetting to finish them... </p>
+<p>Then I would love to thank Shane, Lewis for coding along with me on the weekend and making fun and silly tweaks to the project...Shane and I stayed up till 3am Sunday morning making our projects more awesome or in my case more ridiculous</p>
+<p>Mostly I would like to thank Shane for taking my terrible ideas and pouring gasoline on them and setting them alight, making them even worse...He also helped me figure out how to make the sprinkles come from an innapropriate area instead of random all over the way I had it :)</p>
 
-STRETCH GOALS
-//localstorage preseve game data
-//use same api or make your own or use an array in app.jsx (last one wont count for stretch goal) create api like mono reaper for creating an api - HAVE TO use render
-//extra points for creating own array
+<h3>NOTES</h3>
+<p>use same api or make your own or use an array in app.jsx (last one wont count for stretch goal) create api like mono repo for creating an api - HAVE TO use rende client and server</p>
+<p>I was going to create my own API but decided to use an array just to create some silly names and get my project looking good then if I had extra time I would do it so I saved the code to start but ran out of energy as I think I got a nasty cold</p>
+<p>have fun with the easter egg</p>
+<p>GoogleFonts, FavIcon, Sound, Butt Sprinkles, Arrays everywhere, Math.random is becoming my friend again, css animations are so much fun</p>
+<p>Flex Grid was awful at first but soo amazingly flexible, just like a unicorn that does a lot of yoga</p>
 
-//extra marks for visual styling = themes = settings = login loggoff = achievements = notifications = favicon = googlefonts
+
+<h5>HELP</h5>
+<p>Media queries, still confuse me. I tried to make it fully scalable and sometimes it works perfectly and other times it doesnt refresh, I would in future get this working and switch out background images for different screen sizes.  I usually design the site first and build it mobile first but because I made it functional first I ran out of time because I get distracted and like to tinker with things which wastes a lot of time as I am a novice to most things</p>
+<p>Things I would love to add = themes = settings = login loggoff = achievements = notifications</p>
+<p>I was not feeling very well so when I was not coding I was sleeping so I ran out of time to mess around with more things</p>
+<p>I could not import a Header no matter how I tried it refused to load my code so I think its the same bug Sam had, tried recreating it from scratch a few different ways but no luck so I gave up.</p>
+<p>Bug, well my butt sprinkles works on getting the middle of the image and then trying to guess where the butt is and aparently on render its in a different location so I spent a lot of time tweaking that and going insane</p>
+<p>Also have no idea what to put in here so I just ramble</p>
 
