@@ -4,6 +4,7 @@ import "./media.css";
 import Footer from "./components/Footer";
 import Shop from "./components/Shop";
 import Cookie from "./components/cookies";
+// import Header from "./components/Header"
 
 function App() {
   const [click, setClick] = useState(() => {
@@ -109,7 +110,19 @@ const handleClick = (e) => {
     <div>
       {/* <button class="settings" onClick={resetAll}>Reset</button> */}
       <div className="CookieBox">
-        <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo" />
+      <a href="https://www.youtube.com/watch?v=Ywe1ULpiU9Y" target="blank" className="logo">
+        <span className="u">U</span>
+        <span className="n">N</span>
+        <span className="i">I</span>
+        <span className="c">C</span>
+        <span className="o">O</span>
+        <span className="r">R</span>
+        <span className="n">N</span>
+       <br />
+        <span>FART EXTRACTOR</span>
+        </a>
+       {/* <Header /> */}
+        {/* <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo" /> */}
         <div className="CookieInfo">
           <audio src="./Look-at-my-horse.mp3" controls />
           <span>Clicks: {click}</span>
