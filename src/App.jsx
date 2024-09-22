@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./reset.css";
 import "./media.css";
 import Footer from "./components/Footer";
@@ -22,6 +22,8 @@ function App() {
   });
 
   const [particles, setParticles] = useState([]); // State to manage particles
+  const bouncy = useRef()
+
 
   useEffect(() => {
     localStorage.setItem("cookies", JSON.stringify(cookies));
@@ -48,10 +50,16 @@ function App() {
       const directionY = Math.random() * 2 - 1;
       const speed = Math.random() * 3 + 1; // Random speed between 1 and 4
   
+
+    const box = bouncy.current.getBoundingClientRect()
+    const boxX = box.left + ((box.right - box.left) * 0.5)
+    const boxY = box.top + ((box.bottom - box.top) * 0.5)
+
+
       return {
         id: Date.now() + Math.random(), // Unique ID for each particle
-        x: e.clientX - 50, // Start position based on click event
-        y: e.clientY - 50,
+        x: boxX - 50, // Start position based on click event
+        y: boxY + 150,
         directionX,
         directionY,
         speed,
@@ -92,7 +100,7 @@ function App() {
             alt="Bouncing Unicorn"
             onClick={handleClick}
           >
-            <img src="./weird-unicorn.png" alt="weird embarrased unicorn" />
+            <img src="./weird-unicorn.png" alt="weird embarrased unicorn" ref={bouncy}/>
           </button>
           <br />
           <br />
