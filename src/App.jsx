@@ -59,7 +59,7 @@ function App() {
       return {
         id: Date.now() + Math.random(), // Unique ID for each particle
         x: boxX - 50, // Start position based on click event
-        y: boxY + 300,
+        y: boxY + 200,
         directionX,
         directionY,
         speed,
@@ -125,8 +125,8 @@ function App() {
          key={particle.id}
          className="particle"
          style={{
-           left: `${particle.x + particle.directionX * particle.speed * 10}px`,
-           top: `${particle.y + particle.directionY * particle.speed * 10}px`,
+           left: `${particle.x + particle.directionX * particle.speed * 20}px`,
+           top: `${particle.y + particle.directionY * particle.speed * 20}px`,
          }}
        ></div>
       ))}
