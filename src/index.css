@@ -12,7 +12,7 @@
 }
 
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -23,6 +23,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+ 
 }
 
 .settings{
@@ -38,18 +39,14 @@ body {
   align-self: center;
   margin-bottom: 20px;
   filter: drop-shadow(10PX 10PX 10PX #560152d0);
-
+  cursor: pointer;
 }
 .logo, a {
   text-decoration: none;
-  
-}
-.logo:hover {
-  
 }
 
 
-
+/* Logo RAINBOWS */
 .u {
   color: #e7484f;
 }
@@ -69,40 +66,9 @@ body {
   color: #732982;
 }
 
-/* Rainbow logo */
-.rainbow {
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 16px;
-}
-/* Rainbow button */
-.rainbow-effect:hover {
-  background-image: linear-gradient(
-    to right,
-    #e7484f,
-    #e7484f 16.65%,
-    #f68b1d 16.65%,
-    #f68b1d 33.3%,
-    #fced00 33.3%,
-    #fced00 49.95%,
-    #009e4f 49.95%,
-    #009e4f 66.6%,
-    #00aac3 66.6%,
-    #00aac3 83.25%,
-    #732982 83.25%,
-    #732982 100%,
-    #e7484f 100%
-  );
-  animation: slidebg 2s linear infinite;
-}
-
-@keyframes slidebg {
-  to {
-    background-position: 20vw;
-  }
-}
 
 
+/* audio */
 audio {
   align-self: center;
   margin-bottom: 20px;
@@ -131,12 +97,14 @@ audio {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
   column-gap: 10px;
   row-gap: 15px;
+  border: pink 1px solid;
 }
 
 .ShopBoxes {
-  display: grid; /* You can remove this if you're using grid layout */
+  display: grid; 
 }
 
 .ShopInfo {
@@ -167,11 +135,43 @@ btn-buy:focus,
 btn-buy:focus-visible {
   outline: 10px auto -webkit-focus-ring-color;
 }
+/* Rainbow btn begins */
+.rainbow {
+  cursor: pointer;
+  padding: 8px 16px;
+}
+/* Rainbow button */
+.rainbow-effect:hover {
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+  );
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
 
 .unicorn-button{
   background-color: transparent;
   width: 440px;
   align-self: center;
+  cursor: pointer;
 }
 .unicorn-button:hover {
   color: none;

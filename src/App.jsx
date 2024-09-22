@@ -4,7 +4,7 @@ import "./media.css";
 import Footer from "./components/Footer";
 import Shop from "./components/Shop";
 import Cookie from "./components/cookies";
-// import Header from "./components/Header"
+// import Heading from "./components/Heading";
 
 function App() {
   const [click, setClick] = useState(() => {
@@ -30,7 +30,7 @@ function App() {
     localStorage.setItem("cookies", JSON.stringify(cookies));
     localStorage.setItem("cookiesPerSecond", JSON.stringify(cookiesPerSecond));
     localStorage.setItem("click", JSON.stringify(click));
-    // localStorage.clear();
+
   }, [cookies, cookiesPerSecond, click]);
 
   // COLLECTION OF FARTS TO SOOTHE EVEN THE MOST SAVAGE BEAST
@@ -41,12 +41,6 @@ function App() {
     let audio = new Audio(file);
     audio.play();
   }
-
-  //   function resetAll() {
-  //   cookies = 0;
-  //   cookiesPerSecond = 0;
-  //   localStorage.clear();
-  // }
 
 
 // Function to handle particle generation and cookie clicks
@@ -102,28 +96,25 @@ const handleClick = (e) => {
 };
 
 
-   
-
-
-  
 
   return (
     <div>
       {/* <button class="settings" onClick={resetAll}>Reset</button> */}
       <div className="CookieBox">
-      <a href="https://www.youtube.com/watch?v=Ywe1ULpiU9Y" target="blank" className="logo">
-        <span className="u">U</span>
-        <span className="n">N</span>
-        <span className="i">I</span>
-        <span className="c">C</span>
-        <span className="o">O</span>
-        <span className="r">R</span>
-        <span className="n">N</span>
-       <br />
-        <span>FART EXTRACTOR</span>
-        </a>
-       {/* <Header /> */}
-        {/* <img src="./uni-logo2.png" alt="unicorn fart extractor logo" className="logo" /> */}
+
+       {/* <Header /> weird glitch with header refusing to import*/} 
+       <a href="https://www.youtube.com/watch?v=Ywe1ULpiU9Y" target="blank" className="logo">
+          <span className="u">U</span>
+          <span className="n">N</span>
+          <span className="i">I</span>
+          <span className="c">C</span>
+          <span className="o">O</span>
+          <span className="r">R</span>
+          <span className="n">N</span>
+          <br />
+          <span>FART EXTRACTOR</span>
+          </a>
+       
         <div className="CookieInfo">
           <audio src="./Look-at-my-horse.mp3" controls />
           <span>Clicks: {click}</span>
