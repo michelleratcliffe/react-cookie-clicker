@@ -141,7 +141,7 @@ btn-buy:focus-visible {
   position: absolute;
   width: 20px; /* Adjust size as needed */
   height: 20px;
-  background: url('./cookie3.png'); /* Your particle image */
+  background: url('/cookie3.png'); /* Your particle image */
   background-size: cover;
   animation: fadeOut 1s ease-out forwards;
   pointer-events: none; /* Ensure particles don't block clicks */

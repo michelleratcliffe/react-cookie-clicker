@@ -51,11 +51,3 @@ STRETCH GOALS
 
 //extra marks for visual styling = themes = settings = login loggoff = achievements = notifications = favicon = googlefonts
 
-// Draw the application and decide what the components will be in figma
-// Cookie is a component
-// component for game data
-// component for upgrades (useEffect and fetch upgrades - map through them all and add buttons on click and function to purchase things)
-// App.jsx for the setInterval
-// passs props to show how many cookies you have
-
-//eat away at the cookie screenshot
