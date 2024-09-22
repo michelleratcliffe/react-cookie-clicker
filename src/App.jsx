@@ -30,6 +30,7 @@ function App() {
     localStorage.setItem("cookies", JSON.stringify(cookies));
     localStorage.setItem("cookiesPerSecond", JSON.stringify(cookiesPerSecond));
     localStorage.setItem("click", JSON.stringify(click));
+    // localStorage.clear();
   }, [cookies, cookiesPerSecond, click]);
 
   // COLLECTION OF FARTS TO SOOTHE EVEN THE MOST SAVAGE BEAST
