@@ -68,4 +68,5 @@ You are welcome.</p>
 <p>I could not import a Header no matter how I tried it refused to load my code so I think its the same bug Sam had, tried recreating it from scratch a few different ways but no luck so I gave up.</p>
 <p>Bug, well my butt sprinkles works on getting the middle of the image and then trying to guess where the butt is and aparently on render its in a different location so I spent a lot of time tweaking that and going insane</p>
 <p>Also have no idea what to put in here so I just ramble</p>
+<p>I would have like to implement the golden 'cookie' as well</p>
 
