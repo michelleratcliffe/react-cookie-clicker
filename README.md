@@ -1,6 +1,5 @@
 # NSFW UNICORN FART EXTRACTOR
-https://react-cookie-clicker-s1y2.onrender.com/?1234556710
-https://github.com/michelleratcliffe/react-cookie-clicker
+<p>https://react-cookie-clicker-s1y2.onrender.com</p>
 
 <p>*enjoy the easter egg, not even bleach can burn that from your mind. 
 You are welcome.</p>
